@@ -15,6 +15,9 @@ namespace capaPresentacion
             if (!IsPostBack) {
                 GridView1.DataSource = capaNegocio.listarPersona.generarListado();
                 GridView1.DataBind();
+
+                GridView2.DataSource = capaNegocio.listarEmpresa.generarListar();
+                GridView2.DataBind();
             }
         }
 
@@ -35,7 +38,7 @@ namespace capaPresentacion
         {
             Empleado empleado = new Empleado();
 
-            empleado.buscar(Rut.Text);
+            //empleado.buscar(Rut.Text);
 
             Rut.Text = empleado.Rut.ToString();
             DV.Text = empleado.Dv.ToString();
@@ -69,8 +72,7 @@ namespace capaPresentacion
 
                 dvEmpresa.Text = emp.Dv.ToString();
                 razonEmpresa.Text = emp.RazonSocial;
-            }
-            
+            }         
            
 
            
@@ -81,6 +83,25 @@ namespace capaPresentacion
             rutEmpresa.Text = GridView1.SelectedRow.Cells[1].Text;
             dvEmpresa.Text = GridView1.SelectedRow.Cells[2].Text;
             razonEmpresa.Text = GridView1.SelectedRow.Cells[3].Text;
+        }
+
+        protected void GridView2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            rutEmpresa.Text = GridView2.SelectedRow.Cells[1].Text;
+            dvEmpresa.Text = GridView2.SelectedRow.Cells[2].Text;
+            razonEmpresa.Text = GridView2.SelectedRow.Cells[3].Text;
+        
+        }
+
+        protected void Eliminar1_Click(object sender, EventArgs e)
+        {
+            Empresa emp = new Empresa();
+            emp.Rut = Convert.ToInt32(rutEmpresa.Text);
+
+            if (emp.eliminar()) {
+               
+            }   
+        
         }
     }
 }

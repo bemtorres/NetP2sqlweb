@@ -89,7 +89,7 @@ namespace capaNegocio
 	        }
          
         }
-        public bool buscar(String rut) {
+        public bool buscar() {
             try
             {
                 EmpresasEntities empresas = new EmpresasEntities();

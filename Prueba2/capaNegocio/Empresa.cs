@@ -48,12 +48,111 @@ namespace capaNegocio
         public Empresa(String rut, String dv, String razonSocial) {
             Rut = Convert.ToInt32(rut);
             Dv = Convert.ToChar(dv);
-            RazonSocial = razonSocial;
-
-        
+            RazonSocial = razonSocial;        
         }
 
-        public bool agregar() {
+        public bool agregar() 
+        {
+            EmpresasEntities modeloEmpresa = new EmpresasEntities();
+            capaDatos.Empresa empresa = new capaDatos.Empresa();
+
+            empresa.Rut = this.rut;
+            empresa.Dv = this.dv.ToString();
+            empresa.RazonSocial = this.razonSocial;
+
+            modeloEmpresa.AddToEmpresa(empresa);
+            modeloEmpresa.SaveChanges();
+
+            return true;
+        }
+
+        public bool buscar() 
+        {
+            EmpresasEntities modelo = new EmpresasEntities();
+            capaDatos.Empresa empresa = modelo.Empresa.First
+                (
+                    emp => emp.Rut == this.rut
+                );
+
+            this.dv = Convert.ToChar(empresa.Dv);
+            this.razonSocial = empresa.RazonSocial;
+
+            return true;
+        }
+
+        public bool eliminar(string rut) 
+        {
+            EmpresasEntities modelo = new EmpresasEntities();
+            capaDatos.Empresa empresa = modelo.Empresa.First
+                (
+                    emp => emp.Rut == Convert.ToInt32(rut)
+                );
+
+            modelo.DeleteObject(empresa);
+            modelo.SaveChanges();
+
+            return true;
+        }
+
+        public bool actualizar() 
+        {
+            EmpresasEntities modelo = new EmpresasEntities();
+            capaDatos.Empresa empresa = modelo.Empresa.First
+                (
+                    emp => emp.Rut == this.rut 
+                );
+
+           
+            empresa.Dv = this.dv.ToString();
+            empresa.RazonSocial = this.razonSocial;
+
+            modelo.SaveChanges();
+
+            return true;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        public bool agregar1() {
             try
             {
                 EmpresasEntities empresas = new EmpresasEntities();
@@ -74,7 +173,7 @@ namespace capaNegocio
             }
         }
 
-        public bool buscar() {
+        public bool buscar1() {
             
             EmpresasEntities empresas = new EmpresasEntities();
 
@@ -86,6 +185,27 @@ namespace capaNegocio
             this.Dv = Convert.ToChar(emp.Dv);
             this.RazonSocial = emp.RazonSocial;
             return true;
+        }
+
+        public bool eliminar1(String rut) {
+            EmpresasEntities empresas = new EmpresasEntities();
+
+            capaDatos.Empresa emp = empresas.Empresa.First(
+                    em => em.Rut == Convert.ToInt32(rut)                
+                );
+            empresas.DeleteObject(emp);
+            empresas.SaveChanges();
+            return true;        
+        }
+        public bool actualizar1() {
+            EmpresasEntities empresas = new EmpresasEntities();
+            capaDatos.Empresa emp = empresas.Empresa.First(
+                    em => em.Rut == this.rut
+                );
+            emp.Dv = this.dv.ToString();
+            emp.RazonSocial = this.razonSocial;
+            empresas.SaveChanges();
+            return true;        
         }
     }
 }
