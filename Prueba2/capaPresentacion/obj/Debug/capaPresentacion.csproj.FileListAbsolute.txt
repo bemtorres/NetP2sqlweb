@@ -2,3 +2,8 @@ C:\Users\benja\Desktop\4TO SEMESTRE DUOC\2.- 4to Semestre\Desarrollo .net\Prueba
 C:\Users\benja\Desktop\4TO SEMESTRE DUOC\2.- 4to Semestre\Desarrollo .net\Prueba 2\NetP2sqlweb\Prueba2\capaPresentacion\bin\capaPresentacion.pdb
 C:\Users\benja\Desktop\4TO SEMESTRE DUOC\2.- 4to Semestre\Desarrollo .net\Prueba 2\NetP2sqlweb\Prueba2\capaPresentacion\obj\Debug\capaPresentacion.dll
 C:\Users\benja\Desktop\4TO SEMESTRE DUOC\2.- 4to Semestre\Desarrollo .net\Prueba 2\NetP2sqlweb\Prueba2\capaPresentacion\obj\Debug\capaPresentacion.pdb
+C:\Users\benja\Desktop\4TO SEMESTRE DUOC\2.- 4to Semestre\Desarrollo .net\Prueba 2\NetP2sqlweb\Prueba2\capaPresentacion\bin\capaNegocio.dll
+C:\Users\benja\Desktop\4TO SEMESTRE DUOC\2.- 4to Semestre\Desarrollo .net\Prueba 2\NetP2sqlweb\Prueba2\capaPresentacion\bin\capaNegocio.pdb
+C:\Users\benja\Desktop\4TO SEMESTRE DUOC\2.- 4to Semestre\Desarrollo .net\Prueba 2\NetP2sqlweb\Prueba2\capaPresentacion\obj\Debug\capaPresentacion.csprojResolveAssemblyReference.cache
+C:\Users\benja\Desktop\4TO SEMESTRE DUOC\2.- 4to Semestre\Desarrollo .net\Prueba 2\NetP2sqlweb\Prueba2\capaPresentacion\bin\capaDatos.dll
+C:\Users\benja\Desktop\4TO SEMESTRE DUOC\2.- 4to Semestre\Desarrollo .net\Prueba 2\NetP2sqlweb\Prueba2\capaPresentacion\bin\capaDatos.pdb

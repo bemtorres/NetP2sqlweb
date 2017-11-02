@@ -3,3 +3,6 @@ C:\Users\benja\Desktop\4TO SEMESTRE DUOC\2.- 4to Semestre\Desarrollo .net\Prueba
 C:\Users\benja\Desktop\4TO SEMESTRE DUOC\2.- 4to Semestre\Desarrollo .net\Prueba 2\NetP2sqlweb\Prueba2\capaNegocio\bin\Debug\capaNegocio.pdb
 C:\Users\benja\Desktop\4TO SEMESTRE DUOC\2.- 4to Semestre\Desarrollo .net\Prueba 2\NetP2sqlweb\Prueba2\capaNegocio\obj\Debug\capaNegocio.dll
 C:\Users\benja\Desktop\4TO SEMESTRE DUOC\2.- 4to Semestre\Desarrollo .net\Prueba 2\NetP2sqlweb\Prueba2\capaNegocio\obj\Debug\capaNegocio.pdb
+C:\Users\benja\Desktop\4TO SEMESTRE DUOC\2.- 4to Semestre\Desarrollo .net\Prueba 2\NetP2sqlweb\Prueba2\capaNegocio\bin\Debug\capaDatos.dll
+C:\Users\benja\Desktop\4TO SEMESTRE DUOC\2.- 4to Semestre\Desarrollo .net\Prueba 2\NetP2sqlweb\Prueba2\capaNegocio\bin\Debug\capaDatos.pdb
+C:\Users\benja\Desktop\4TO SEMESTRE DUOC\2.- 4to Semestre\Desarrollo .net\Prueba 2\NetP2sqlweb\Prueba2\capaNegocio\obj\Debug\capaNegocio.csprojResolveAssemblyReference.cache
