@@ -7,3 +7,12 @@ C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaPresentacion\bin\CapaDatos.dll
 C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaPresentacion\bin\CapaNegocio.pdb
 C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaPresentacion\bin\CapaDatos.pdb
 C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaPresentacion\bin\CapaPresentacion.dll
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaPresentacion\bin\CapaPresentacion.pdb
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaPresentacion\bin\CapaNegocio.dll
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaPresentacion\bin\CapaDatos.dll
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaPresentacion\bin\CapaNegocio.pdb
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaPresentacion\bin\CapaDatos.pdb
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaPresentacion\obj\Debug\CapaPresentacion.dll

@@ -14,6 +14,12 @@
     <div>
     <a href="ListaEmpresas.aspx">Lista Empresas</a>
     </div>
+       <div>
+    <a href="FormularioEmpleado.aspx">Formulario Empleado</a>
+    </div>
+    <div>
+    <a href="ListarEmpleados.aspx">Lista Epleados</a>
+    </div>
     </form>
 </body>
 </html>

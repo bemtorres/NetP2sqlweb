@@ -50,9 +50,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FormularioEmpleado.aspx" />
     <Content Include="FormularioEmpresas.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="ListaEmpresas.aspx" />
+    <Content Include="ListarEmpleados.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -62,6 +64,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormularioEmpleado.aspx.cs">
+      <DependentUpon>FormularioEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormularioEmpleado.aspx.designer.cs">
+      <DependentUpon>FormularioEmpleado.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FormularioEmpresas.aspx.cs">
       <DependentUpon>FormularioEmpresas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -82,6 +91,13 @@
     </Compile>
     <Compile Include="ListaEmpresas.aspx.designer.cs">
       <DependentUpon>ListaEmpresas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListarEmpleados.aspx.cs">
+      <DependentUpon>ListarEmpleados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListarEmpleados.aspx.designer.cs">
+      <DependentUpon>ListarEmpleados.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

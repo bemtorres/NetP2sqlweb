@@ -6,3 +6,11 @@ C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaNegocio\obj\Debug\CapaNegocio.pdb
 C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaNegocio\bin\Debug\CapaDatos.dll
 C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaNegocio\bin\Debug\CapaDatos.pdb
 C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaNegocio\bin\Debug\CapaNegocio.dll.config
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaNegocio\obj\Debug\CapaNegocio.pdb

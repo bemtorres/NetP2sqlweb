@@ -3,3 +3,8 @@ C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaDatos\bin\Debug\CapaDatos.dll
 C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaDatos\bin\Debug\CapaDatos.pdb
 C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\benja\Desktop\NetP2sqlweb\Empresaxd\CapaDatos\obj\Debug\CapaDatos.pdb
