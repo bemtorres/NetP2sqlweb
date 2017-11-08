@@ -17,7 +17,7 @@ namespace CapaPresentacion
 
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
-            Empleado empleado = new Empleado(txtRut.Text, txtDv.Text, txtNombres.Text, txtApellidos.Text, ddlEmpresas.SelectedValue.ToString());
+            Empleado empleado = new Empleado(txtRut.Text, txtDv.Text, txtNombres.Text, txtApellidos.Text, DropDownList1.SelectedValue.ToString());
 
             if (empleado.Create())
             {

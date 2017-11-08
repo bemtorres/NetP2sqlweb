@@ -50,13 +50,13 @@
                 <td>
                     Empresa</td>
                 <td>
-                    <asp:DropDownList ID="ddlEmpresas" runat="server" AutoPostBack="True" 
-                        DataSourceID="ObjectDataSource1" DataTextField="RazonSocial" 
-                        DataValueField="Rut">
-                    </asp:DropDownList>
                     <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" 
                         SelectMethod="GenerarListado" TypeName="CapaNegocio.EmpresaColeccion">
                     </asp:ObjectDataSource>
+                    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" 
+                        DataSourceID="ObjectDataSource1" DataTextField="RazonSocial" 
+                        DataValueField="Rut">
+                    </asp:DropDownList>
                 </td>
             </tr>
         </table>
