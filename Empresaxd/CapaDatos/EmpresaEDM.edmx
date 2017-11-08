@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="EmpresasModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="EmpresasModelStoreContainer">
+          <EntitySet Name="Empleado" EntityType="EmpresasModel.Store.Empleado" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Empresa" EntityType="EmpresasModel.Store.Empresa" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="Empresa_Empleado_FK1" Association="EmpresasModel.Store.Empresa_Empleado_FK1">
+            <End Role="Empresa" EntitySet="Empresa" />
+            <End Role="Empleado" EntitySet="Empleado" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Empleado">
+          <Key>
+            <PropertyRef Name="Rut" />
+          </Key>
+          <Property Name="Rut" Type="int" Nullable="false" />
+          <Property Name="Dv" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="Nombres" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Apellidos" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Empresa" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Empresa">
+          <Key>
+            <PropertyRef Name="Rut" />
+          </Key>
+          <Property Name="Rut" Type="int" Nullable="false" />
+          <Property Name="Dv" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="RazonSocial" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <Association Name="Empresa_Empleado_FK1">
+          <End Role="Empresa" Type="EmpresasModel.Store.Empresa" Multiplicity="1" />
+          <End Role="Empleado" Type="EmpresasModel.Store.Empleado" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empresa">
+              <PropertyRef Name="Rut" />
+            </Principal>
+            <Dependent Role="Empleado">
+              <PropertyRef Name="Empresa" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EmpresasModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="EmpresasEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Empleado" EntityType="EmpresasModel.Empleado" />
+          <EntitySet Name="Empresa" EntityType="EmpresasModel.Empresa" />
+          <AssociationSet Name="Empresa_Empleado_FK1" Association="EmpresasModel.Empresa_Empleado_FK1">
+            <End Role="Empresa" EntitySet="Empresa" />
+            <End Role="Empleado" EntitySet="Empleado" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Empleado">
+          <Key>
+            <PropertyRef Name="Rut" />
+          </Key>
+          <Property Name="Rut" Type="Int32" Nullable="false" />
+          <Property Name="Dv" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="Nombres" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Apellidos" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Empresa" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Empresa1" Relationship="EmpresasModel.Empresa_Empleado_FK1" FromRole="Empleado" ToRole="Empresa" />
+        </EntityType>
+        <EntityType Name="Empresa">
+          <Key>
+            <PropertyRef Name="Rut" />
+          </Key>
+          <Property Name="Rut" Type="Int32" Nullable="false" />
+          <Property Name="Dv" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="RazonSocial" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Empleado" Relationship="EmpresasModel.Empresa_Empleado_FK1" FromRole="Empresa" ToRole="Empleado" />
+        </EntityType>
+        <Association Name="Empresa_Empleado_FK1">
+          <End Role="Empresa" Type="EmpresasModel.Empresa" Multiplicity="1" />
+          <End Role="Empleado" Type="EmpresasModel.Empleado" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empresa">
+              <PropertyRef Name="Rut" />
+            </Principal>
+            <Dependent Role="Empleado">
+              <PropertyRef Name="Empresa" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EmpresasModelStoreContainer" CdmEntityContainer="EmpresasEntities">
+          <EntitySetMapping Name="Empleado">
+            <EntityTypeMapping TypeName="EmpresasModel.Empleado">
+              <MappingFragment StoreEntitySet="Empleado">
+                <ScalarProperty Name="Rut" ColumnName="Rut" />
+                <ScalarProperty Name="Dv" ColumnName="Dv" />
+                <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+                <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+                <ScalarProperty Name="Empresa" ColumnName="Empresa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Empresa">
+            <EntityTypeMapping TypeName="EmpresasModel.Empresa">
+              <MappingFragment StoreEntitySet="Empresa">
+                <ScalarProperty Name="Rut" ColumnName="Rut" />
+                <ScalarProperty Name="Dv" ColumnName="Dv" />
+                <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="EmpresaEDM">
+        <EntityTypeShape EntityType="EmpresasModel.Empleado" Width="1.5" PointX="3.125" PointY="0.5" Height="2.1725878906250005" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmpresasModel.Empresa" Width="1.5" PointX="1.125" PointY="3.125" Height="1.7879850260416674" IsExpanded="true" />
+        <AssociationConnector Association="EmpresasModel.Empresa_Empleado_FK1" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.625" PointY="3.125" />
+          <ConnectorPoint PointX="3.125" PointY="2.6725878906250005" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

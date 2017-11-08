@@ -1,0 +1,5 @@
+C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaDatos\obj\Debug\CapaDatos.pdb

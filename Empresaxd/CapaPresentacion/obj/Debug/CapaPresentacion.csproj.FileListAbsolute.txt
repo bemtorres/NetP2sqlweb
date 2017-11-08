@@ -1,0 +1,9 @@
+C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaPresentacion\bin\CapaPresentacion.dll
+C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaPresentacion\bin\CapaPresentacion.pdb
+C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaPresentacion\bin\CapaNegocio.dll
+C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaPresentacion\bin\CapaDatos.dll
+C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaPresentacion\bin\CapaNegocio.pdb
+C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaPresentacion\bin\CapaDatos.pdb
+C:\Users\Seba\Projects\ASP.net\Empresaxd\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
